@@ -1,11 +1,37 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?x9vdx4');
+	src:url('../fonts/icomoon.eot?#iefixx9vdx4') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?x9vdx4') format('truetype'),
+		url('../fonts/icomoon.woff?x9vdx4') format('woff'),
+		url('../fonts/icomoon.svg?x9vdx4#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
 html{
 	background: #f5f5f5;
 }
 .Header{
 	background: #302f34;
 	position: fixed;
+	/*height: 100%;*/
 	width: 100%;
-	text-align: center;
 	left: 0;
 	top: 0;
 }
@@ -18,26 +44,47 @@ html{
 		margin: 0;
 
 		}
+
+	.navicon:after{
+		color: #e94224;
+		content: "\e9bd";
+		float: right;
+		font-family: 'icomoon';
+		font-size: 3rem;
+		margin: 0.2rem 2rem 0 0;
+		text-decoration: none;
+		vertical-align: bottom;
+
+	}
 			
 	.Menu{
-		display: inline-block;
-
+	display: none;
+	margin-top: 0.5rem;
+	width: 100%;
+	text-align: center;
+	background: #302f34;
 	}
 		.Menu-list{
 		margin: 0;
+		padding-left: 0.02rem;
 		}
 			.Menu-item {
-				display: inline-block;
-				padding-right: 1rem;
+				font-size: 2rem;
+				border-bottom: 3px solid #e94224;
+
 
 			}
 			.Menu-item a {
-				text-decoration: none;
+				display: block;
 				color: #4278bc;
+				text-decoration: none;
 			}
 
 			.Menu-item a:hover{
 				color: #3eb54a;
+				background-color: rgba(255,255,255, 1);
+
+
 			}
 
 .About {
@@ -45,22 +92,28 @@ html{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width: 100%;
-	height: 200px;
-	text-align: center;
+	height: 230px;
 	margin-top: 3.5rem;
-
+	padding-top: 1rem;
+	text-align: center;
+	width: 100%;
+	
 }
 	.About-title {
 		font-size: 2rem;
-		padding-top: 4rem;
 		color: white;
+		margin: 0;
+		padding: 3rem 0 0 0;
+
 	}
 		.About-button{
 			background: #e94224;
 			border-radius: 5px;
 			border:none;
 			color: white;
+			height: 2rem;
+			margin-top: 1rem;
+			width: 6rem;
 
 		}
 .Work{
