@@ -22,6 +22,49 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}../fonts/
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-check33:before {
+	content: "\e000";
+}
+.flaticon-facebook29:before {
+	content: "\e001";
+}
+.flaticon-google2:before {
+	content: "\e002";
+}
+.flaticon-loud7:before {
+	content: "\e003";
+}
+.flaticon-paint4:before {
+	content: "\e004";
+}
+.flaticon-rectangular4:before {
+	content: "\e005";
+}
+.flaticon-smartphone166:before {
+	content: "\e006";
+}
+.flaticon-twitter2:before {
+	content: "\e007";
+}
+.flaticon-website17:before {
+	content: "\e008";
+}
 
 
 html{
@@ -47,11 +90,11 @@ html{
 
 	.navicon:after{
 		color: #e94224;
-		content: "\e9bd";
+			content: "\e9bd";
 		float: right;
 		font-family: 'icomoon';
 		font-size: 3rem;
-		margin: 0.2rem 2rem 0 0;
+		margin: 0.2rem 1.5rem 0 0;
 		text-decoration: none;
 		vertical-align: bottom;
 
@@ -106,7 +149,7 @@ html{
 				border: none;
 				font-size: 1rem;
 				display: inline-block;
-				margin-right: 0.5Services
+				margin-right: 0.5rem;
 
 			}
 			.Menu-item a {
@@ -147,26 +190,97 @@ html{
 			color: white;
 			height: 2rem;
 			margin-top: 1rem;
-			width: 6rem;
+			width: 8rem;
+
 
 		}
+@media screen and (min-width: 768px){
+	.Cta {
+		height: 300px;
+	}
+	.Cta-title {
+		font-size: 3rem;
+		margin-top: 1rem;
+	}
+	.Cta-button{
+		margin-top: 2rem;
+		width:12rem;
+		height: 3rem;
+		font-size: 1.5rem;
+	}
+}
 .Services{
 	text-align: center;
 	width: 100%;
 }
 	.Services-item{
 	display: inline-block;
-	margin: 0 4rem;
+	margin: 0 0.6rem;
 
 
 	}
 		.Services-title{
+		display: none;
+		}
+		.Services-icon{
+		background: #e94224;
+		width: 3.5rem;
+		height: 3.5rem;
+		margin: 2rem 0;
+		border-radius: 10px;
 
 		}
+		.Services-iconfont{
+			content: "\e006";
+			color: white;
+			display: block;
+			font-family: 'Flaticon';
+			font-size: 2.7rem;
+			text-decoration: none;
+			padding: 0 0.35rem 0.6rem 0.35rem; 
 
+		}
+		.Services-iconfontApp:after{
+
+			content: "\e006";
+		}
+		.Services-iconfontWeb:after{
+			content: "\e008";
+
+		}
+		.Services-iconfontDesign:after{
+			content: "\e004";
+
+		}
+		.Services-iconfontMkt:after{
+			content: "\e003";
+
+		}
+@media screen and (min-width: 768px) {
+.Services-item{
+
+	margin: 0 2rem;
+
+
+	}
+		.Services-title{
+		display: block;
+		}
 		.Services-icon{
 
+		width: 7rem;
+		height: 7rem;
+		margin: 2rem 0;
+
+
 		}
+		.Services-iconfont{
+			
+			font-size: 5.5rem;
+			padding-bottom: 1rem;
+
+		}
+}
 
 .Footer{
 	text-align: center;
