@@ -106,7 +106,7 @@ html{
 				border: none;
 				font-size: 1rem;
 				display: inline-block;
-				margin-right: 0.5rem;
+				margin-right: 0.5Services
 
 			}
 			.Menu-item a {
@@ -121,7 +121,7 @@ html{
 			}
 }
 
-.About {
+.Cta {
 	background-image: url('../images/portada.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -133,14 +133,14 @@ html{
 	width: 100%;
 	
 }
-	.About-title {
+	.Cta-title {
 		font-size: 2rem;
 		color: white;
 		margin: 0;
 		padding: 3rem 0 0 0;
 
 	}
-		.About-button{
+		.Cta-button{
 			background: #e94224;
 			border-radius: 5px;
 			border:none;
@@ -150,27 +150,21 @@ html{
 			width: 6rem;
 
 		}
-.Work{
+.Services{
 	text-align: center;
+	width: 100%;
 }
-	.Work-item{
+	.Services-item{
 	display: inline-block;
-	margin-right: 5rem;
-	text-align: center;
+	margin: 0 4rem;
+
+
 	}
-		.Work-title{
+		.Services-title{
 
 		}
-		.Work-imageContainer{
 
-		}
-			.Work-image{
-
-			}
-				.Work-imageDescription{
-
-				}
-		.Work-Description{
+		.Services-icon{
 
 		}
 
