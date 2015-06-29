@@ -281,7 +281,30 @@ html{
 
 		}
 }
+.About {
+	padding: 2rem 0;
+	background: #edecec;
 
+}
+	.About-title{
+		text-align: center;
+
+	}
+	.About-description {
+	margin: 0 2rem;
+	}
+	.About-description span{
+		display: block;
+		margin-bottom: 1rem;
+	}
+@media screen and (min-width: 768px){
+	.About{
+		text-align: center;
+	}
+	.About-description {
+		font-size: 1.2rem;
+	}
+}
 .Footer{
 	text-align: center;
 }
