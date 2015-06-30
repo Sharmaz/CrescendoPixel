@@ -291,7 +291,7 @@ html{
 
 	}
 	.About-description {
-	margin: 0 2rem;
+	margin: 0 12% 0 15%;
 	}
 	.About-description span{
 		display: block;
@@ -303,7 +303,96 @@ html{
 	}
 	.About-description {
 		font-size: 1.2rem;
+		width: 100%;
+		margin: 0 auto;
 	}
+}
+.Contact {
+	background: #4278bc;
+	padding: 1rem 0;
+	text-align: center;
+	
+}
+	.Contact-title{
+
+	}
+	.Contact-form{
+	width: 80%;
+	margin: 0 10%;
+	}
+	.Contact-formInput{
+		background: white;
+		border:none;
+		border-radius: 0.2rem;
+		display: block;
+		padding: 0.5rem;
+		margin:1rem auto;
+		width: 90%;
+	}
+	.Contact-textArea{
+	height: 120px;
+	resize: none;
+	}
+	.Contact-button{
+	background: #e94224;
+	border:none;
+	border-radius: 5px;
+	color: white;
+	margin: 0.5rem 0;
+	width: 8rem;
+	height: 2rem;
+
+	}
+	.List{
+		display: none;
+	}
+@media screen and (min-width: 768px){
+		.Contact{
+			width: 100%;
+			margin: 0;
+		}
+		.Contact-title{
+		text-align: left;
+		margin:0 0 0 10%;
+		}
+		.Contact-form{
+		width: 40%;
+		display: inline-block;
+		margin: 0 3rem 0 0;
+		}
+		
+		.Contact-formInput{
+		margin:1rem 0;
+		}
+		.List{
+		display: inline-block;
+		text-align: left;
+		width: 40%;
+		vertical-align: top;
+		text-decoration: none;
+		}
+		.List ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		}
+		.List ul li{
+		}
+		.List-group{
+			padding:0;
+			margin:0 0 2rem 3rem ;
+			text-align: left;
+
+		}
+		.List-groupIcon:after{
+			font-family: 'Flaticon';
+			content: "\e000";
+			font-size: 2rem;
+			float: left;
+
+
+		}
 }
 .Footer{
 	text-align: center;
