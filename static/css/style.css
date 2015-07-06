@@ -168,6 +168,10 @@ html{
 
 
 		}
+		.Cta-description{
+			color: white;
+			font-size: 1.5rem;
+		}
 @media screen and (min-width: 768px){
 	.Cta {
 		height: 300px;
