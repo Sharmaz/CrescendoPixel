@@ -286,6 +286,32 @@ html{
 		margin: 0 auto;
 	}
 }
+
+.Wrapper {
+	background: white;
+	margin: 0;
+	padding: 1rem 0 0 0;
+	width: 100%;
+}
+.Info {
+	padding: 0 2rem 1rem 2rem;
+	text-align: justify;
+	display: inline-block;
+}
+
+@media screen and (min-width: 768px){
+	.Wrapper{
+		margin: 0 auto;
+		padding: 0 5%;
+	}
+	.Info {
+		width: 40%;
+		vertical-align: top;
+		margin: 1rem 0.5rem;
+		padding: 1rem 0.5rem;
+	}
+}
+
 .Contact {
 	background: #4278bc;
 	padding: 1rem 0;
