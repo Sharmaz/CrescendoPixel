@@ -312,6 +312,51 @@ html{
 	}
 }
 
+.Process {
+	background: #3eb54a;
+	color: white;
+	width: 100%;
+	padding: 1rem 0;
+
+}
+	.Process-title {
+	text-align: center;
+	}
+	.Process ul {
+	list-style: none;
+	margin: 0 0 0 1rem;
+	padding: 0;
+	width: 90%;
+	}
+	.Process-listItem {
+			padding:0;
+			margin:0 0 2rem 4rem ;
+			text-align: left;
+	}
+	.Process-groupIcon:before {
+			font-family: 'Flaticon';
+			content: "\e000";
+			font-size: 3.5rem;
+			color: white;
+			float: left;
+
+	}
+
+@media screen and (min-width: 768px){
+	.Process-list{
+		display: inline-block;
+		width: 50%;
+	}
+	.Process-image{
+		display: inline-block;
+		width: 40%;
+		background: red;
+	}
+	.Process-groupIcon:before{
+		font-size: 2rem;
+	}
+}
+
 .Contact {
 	background: #4278bc;
 	padding: 1rem 0;
