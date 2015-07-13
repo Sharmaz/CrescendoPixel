@@ -168,6 +168,9 @@ html{
 
 
 		}
+		.Cta-button:hover{
+			background: #3eb54a;
+		}
 		.Cta-description{
 			color: white;
 			font-size: 1.5rem;
@@ -206,6 +209,12 @@ html{
 		height: 3.5rem;
 		margin: 2rem 0;
 		border-radius: 10px;
+
+		}
+
+		.Services-icon a:hover{
+			background: #3eb54a;
+			border-radius: 10px;
 
 		}
 		.Services-iconfont{
@@ -372,25 +381,22 @@ html{
 		height: 250px;
 		margin: 1rem;
 		padding: 0 2.2rem;
+		text-align: center;
+		width: 70%;
 
 
 	}
-	.Portfolio-item{
 
-	}
 	.Portfolio-image{
 
 	}
 
-/*@media screen and (min-width: 768px){
-	.Portfolio{
-	flex-flow:row;
-	}
+@media screen and (min-width: 768px){
 	.Portfolio-item{
-		width: 24%;
+		width: 25%;
 	}
 
-}*/
+}
 	
 .Contact {
 	background: #4278bc;
@@ -427,6 +433,9 @@ html{
 	width: 8rem;
 	height: 2rem;
 
+	}
+	.Contact-button:hover{
+		background: #3eb54a;
 	}
 	.List{
 		display: none;
