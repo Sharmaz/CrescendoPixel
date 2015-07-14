@@ -367,6 +367,8 @@ html{
 }
 
 .Portfolio {
+/*	background: #3eb54a;*/
+	background: #edecec;
 	display: flex;
 	justify-content:center;
 	flex-flow:row wrap;
@@ -377,8 +379,9 @@ html{
 
 }
 	.Portfolio-item{
-		background: red;
-		height: 250px;
+		background: #4278bc;
+		border-radius: 0.5rem;
+		color: white;
 		margin: 1rem;
 		padding: 0 2.2rem;
 		text-align: center;
@@ -388,12 +391,15 @@ html{
 	}
 
 	.Portfolio-image{
-
+	width: 100%;
 	}
 
 @media screen and (min-width: 768px){
 	.Portfolio-item{
 		width: 25%;
+	}
+	.Portfolio-image{
+	width: 100%;
 	}
 
 }
