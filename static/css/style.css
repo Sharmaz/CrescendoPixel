@@ -350,6 +350,9 @@ html{
 			float: left;
 
 	}
+	.Process-black {
+		font-weight: bold;
+	}
 
 @media screen and (min-width: 768px){
 	.Process-list{
