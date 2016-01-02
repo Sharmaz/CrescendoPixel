@@ -4,7 +4,7 @@
     "express": "^4.13.3"
   },
   "scripts": {
-    "jade": "jade --watch --pretty template/index.jade --out public",
+    "jade": "jade --watch --pretty lib/index.jade --out public",
     "stylus": "stylus --use nib --watch template/style.styl --out static/css"
   }
 }
