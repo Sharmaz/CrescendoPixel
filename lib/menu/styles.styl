@@ -1,0 +1,75 @@
+.Header
+	background #302f34
+	position fixed
+	/*height: 100%;*/
+	width 100%
+	left 0
+	top 0
+
+.Header-imageContainer
+	display inline-block
+	margin 0.5rem
+
+.Header-image
+	width 200px
+	margin 0
+
+.navicon:after
+	color #e94224
+	content "\e9bd"
+	float right
+	font-family 'icomoon'
+	font-size 3rem
+	margin 0.2rem 1.5rem 0 
+	text-decoration none
+	vertical-align bottom
+
+.Menu
+	display none
+	margin-top 0.5rem
+	width 100%
+	text-align center
+	background #302f34
+
+.Menu-list
+	margin 0
+	padding-left 0.02rem
+
+.Menu-item 
+	font-size 2rem
+	border-bottom 3px solid #e94224
+
+.Menu-item a 
+	display block
+	color #4278bc
+	text-decoration none
+
+.Menu-item a:hover
+	color #3eb54a
+	background-color rgba(255,255,255, 1)
+
+@media screen and (min-width: 768px)
+	.navicon:after
+		display none
+
+	.Menu
+		display inline-block
+		margin 0 0 1.5rem 0
+		padding 0
+		width 65%
+		vertical-align middle
+		text-align right
+
+	.Menu-item
+		border none
+		font-size 1rem
+
+	.Menu-item a
+		display inline-block
+		margin-right .5rem
+		text-decoration none
+		color #4278bc
+
+	.Menu-item a:hover
+		color #3eb54a
+		background none		
