@@ -33,6 +33,52 @@
 font-style: normal;
 margin-left: 20px;
 } */
+.Contact-form {
+  width: 80%;
+  margin: 0 10%;
+}
+.Contact-formInput {
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  display: block;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  width: 90%;
+}
+.Contact-textArea {
+  height: 120px;
+  resize: none;
+}
+.Contact-button {
+  background: #e94224;
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0.5rem 0;
+  width: 8rem;
+  height: 2rem;
+}
+.Contact-button:hover {
+  background: #3eb54a;
+}
+@media screen and (min-width: 768px) {
+  .Contact {
+    width: 100%;
+    margin: 0;
+  }
+  .Contact-title {
+    text-align: left;
+    margin: 0 0 0 10%;
+  }
+  .Contact {
+    width: 40%;
+    display: inline-block;
+    margin: 0 3rem 0 0;
+  }
+}
 .Cta {
   background-image: url("../images/portada.jpg");
   background-repeat: no-repeat;
@@ -246,62 +292,15 @@ margin-left: 20px;
     margin: 0 auto;
   }
 }
-.Contact {
+.WrapContentList {
   background: #4278bc;
   padding: 1rem 0;
   text-align: center;
-}
-.Contact-form {
-  width: 80%;
-  margin: 0 10%;
-}
-.Contact-formInput {
-  background: #fff;
-  border: none;
-  -webkit-border-radius: 0.2rem;
-  border-radius: 0.2rem;
-  display: block;
-  padding: 0.5rem;
-  margin: 1rem auto;
-  width: 90%;
-}
-.Contact-textArea {
-  height: 120px;
-  resize: none;
-}
-.Contact-button {
-  background: #e94224;
-  border: none;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
-  margin: 0.5rem 0;
-  width: 8rem;
-  height: 2rem;
-}
-.Contact-button:hover {
-  background: #3eb54a;
 }
 .List {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .Contact {
-    width: 100%;
-    margin: 0;
-  }
-  .Contact-title {
-    text-align: left;
-    margin: 0 0 0 10%;
-  }
-  .Contact-form {
-    width: 40%;
-    display: inline-block;
-    margin: 0 3rem 0 0;
-  }
-  .Contact-formInput {
-    margin: 1rem 0;
-  }
   .List {
     display: inline-block;
     text-align: left;
@@ -319,7 +318,7 @@ margin-left: 20px;
     margin: 0 0 2rem 3rem;
     text-align: left;
   }
-  .List-groupIcon:after {
+  .List-groupIcon:before {
     font-family: 'Flaticon';
     content: "\e000";
     font-size: 2rem;
