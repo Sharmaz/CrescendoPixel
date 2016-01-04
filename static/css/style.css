@@ -159,6 +159,173 @@ margin-left: 20px;
     margin: 1rem 0;
   }
 }
+.Services {
+  text-align: center;
+  width: 100%;
+}
+.Services-item {
+  display: inline-block;
+  margin: 0 0.6rem;
+}
+.Services-title {
+  display: none;
+}
+.Services-icon {
+  background: #e94224;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 2rem 0;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.Services-icon a:hover {
+  background: #3eb54a;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.Services-iconfont {
+  content: "\e006";
+  color: #fff;
+  display: block;
+  font-family: 'Flaticon';
+  font-size: 2.7rem;
+  text-decoration: none;
+  padding: 0 0.35rem 0.6rem 0.35rem;
+}
+.Services-iconfontApp:after {
+  content: "\e007";
+}
+.Services-iconfontWeb:after {
+  content: "\e00a";
+}
+.Services-iconfontDesign:after {
+  content: "\e005";
+}
+.Services-iconfontMkt:after {
+  content: "\e003";
+}
+@media screen and (min-width: 768px) {
+  .Services-item {
+    margin: 0 2rem;
+    color: #fff;
+  }
+  .Services-title {
+    display: block;
+  }
+  .Services-icon {
+    width: 7rem;
+    height: 7rem;
+    margin: 2rem 0;
+  }
+  .Services-iconfont {
+    font-size: 5.5rem;
+    padding-bottom: 1rem;
+  }
+}
+.About {
+  padding: 2rem 0;
+  background: #edecec;
+}
+.About-title {
+  text-align: center;
+}
+.About-description {
+  margin: 0 12% 0 15%;
+}
+.About-description span {
+  display: block;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .About {
+    text-align: center;
+  }
+  .About-description {
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.Contact {
+  background: #4278bc;
+  padding: 1rem 0;
+  text-align: center;
+}
+.Contact-form {
+  width: 80%;
+  margin: 0 10%;
+}
+.Contact-formInput {
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  display: block;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  width: 90%;
+}
+.Contact-textArea {
+  height: 120px;
+  resize: none;
+}
+.Contact-button {
+  background: #e94224;
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0.5rem 0;
+  width: 8rem;
+  height: 2rem;
+}
+.Contact-button:hover {
+  background: #3eb54a;
+}
+.List {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .Contact {
+    width: 100%;
+    margin: 0;
+  }
+  .Contact-title {
+    text-align: left;
+    margin: 0 0 0 10%;
+  }
+  .Contact-form {
+    width: 40%;
+    display: inline-block;
+    margin: 0 3rem 0 0;
+  }
+  .Contact-formInput {
+    margin: 1rem 0;
+  }
+  .List {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    vertical-align: top;
+    text-decoration: none;
+  }
+  .List ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .List-group {
+    padding: 0;
+    margin: 0 0 2rem 3rem;
+    text-align: left;
+  }
+  .List-groupIcon:after {
+    font-family: 'Flaticon';
+    content: "\e000";
+    font-size: 2rem;
+    float: left;
+  }
+}
 .Header {
   background: #302f34;
   position: fixed;
