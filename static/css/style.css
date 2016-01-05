@@ -33,6 +33,74 @@
 font-style: normal;
 margin-left: 20px;
 } */
+.Wrapper {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.Info {
+  padding: 0;
+  margin: 5%;
+  text-align: justify;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .Wrapper {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .Info {
+    width: 40%;
+    vertical-align: top;
+    margin: 4.8%;
+    padding: 0;
+  }
+}
+.Process {
+  background: #3eb54a;
+  color: #fff;
+  width: 100%;
+  padding: 1rem 0;
+}
+.Process-title {
+  text-align: center;
+}
+.Process ul {
+  list-style: none;
+  margin: 0 0 0 1rem;
+  padding: 0;
+  width: 90%;
+}
+.Process-listItem {
+  padding: 0;
+  margin: 0 0 2rem 4rem;
+  text-align: left;
+}
+.Process-groupIcon:before {
+  font-family: 'Flaticon';
+  content: "\e000";
+  font-size: 3.5rem;
+  color: #fff;
+  float: left;
+}
+.Process-black {
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .Process-list {
+    display: inline-block;
+    width: 50%;
+  }
+  .Process-image {
+    display: inline-block;
+    width: 40%;
+    background: #f00;
+  }
+  .Process-groupIcon:before {
+    font-size: 2rem;
+  }
+}
 .Contact-form {
   width: 80%;
   margin: 0 10%;
