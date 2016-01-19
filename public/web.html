@@ -53,11 +53,11 @@
     <div class="WrapContentList">
       <section id="contacto" class="Contact">
         <h2 class="Contact-title">Contacto</h2>
-        <form action="" class="Contact-form">
-          <input type="text" placeholder="Nombre" required="required" class="Contact-formInput"/>
-          <input type="email" placeholder="Email" required="required" class="Contact-formInput"/>
-          <textarea type="textarea" placeholder="Mensaje" required="required" class="Contact-formInput Contact-textArea"></textarea>
-          <button class="Contact-button">Enviar</button>
+        <form method="POST" action="/enviar" class="Contact-form">
+          <input type="text" id="name" name="nombre" placeholder="Nombre" required="required" class="Contact-formInput"/>
+          <input type="email" id="email" name="mail" placeholder="Email" required="required" class="Contact-formInput"/>
+          <textarea type="textarea" id="message" name="mensaje" placeholder="Mensaje" required="required" class="Contact-formInput Contact-textArea"></textarea>
+          <input type="submit" id="enviar" name="enviar" class="Contact-button"/>
         </form>
       </section>
       <div class="List">

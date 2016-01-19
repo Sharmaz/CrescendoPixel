@@ -1,7 +1,7 @@
 section.Contact#contacto
 	h2.Contact-title Contacto
-	form.Contact-form(action="")
-		input.Contact-formInput(type="text" placeholder="Nombre" required)
-		input.Contact-formInput(type="email" placeholder="Email" required)
-		textarea.Contact-formInput.Contact-textArea(type="textarea" placeholder="Mensaje" required)
-		button.Contact-button Enviar
+	form.Contact-form(method="POST" action="/enviar")
+		input.Contact-formInput(type="text" id="name" name="nombre" placeholder="Nombre" required)
+		input.Contact-formInput(type="email" id="email" name="mail" placeholder="Email" required)
+		textarea.Contact-formInput.Contact-textArea(type="textarea" id="message" name="mensaje" placeholder="Mensaje" required)
+		input.Contact-button(type="submit" id="enviar" name="enviar")
