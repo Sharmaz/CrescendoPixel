@@ -27,6 +27,12 @@ web.use('/contacto', express.static('public/contacto.html'))
 
 web.use( parser.urlencoded({ extended: true }))
 web.post('/enviar', function(req, res) {
+	var auth = {
+  auth: {
+    api_key: 'key-4cec4805d46b7c935457f2c405b43f5f',
+    domain: 'crescendopixel.com'
+  }
+}
 	var nombre = req.body.nombre
 	var mail = req.body.mail
 	var mensaje = req.body.mensaje
@@ -47,12 +53,3 @@ web.post('/enviar', function(req, res) {
 
 	res.send("Nombre " + nombre + " " + mail + " " + mensaje)
 })
-
-var auth = {
-  auth: {
-    api_key: 'key-4cec4805d46b7c935457f2c405b43f5f',
-    domain: 'https://api.mailgun.net/v3/crescendopixel.com'
-  }
-}
-/*
- */
