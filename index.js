@@ -1,7 +1,7 @@
 'use strict'
 const express = require('express')
 const web = express()
-const port = 8080
+const port = 8888
 const nodemailer = require('nodemailer')
 const mg = require('nodemailer-mailgun-transport')
 const parser = require('body-parser')
