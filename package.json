@@ -7,7 +7,7 @@
     "nodemailer-mailgun-transport": "git+https://github.com/orliesaurus/nodemailer-mailgun-transport.git"
   },
   "scripts": {
-    "jade": "jade --watch --pretty lib/apps.jade --out public",
+    "jade": "jade --watch --pretty lib/web.jade --out public",
     "stylus": "stylus --use nib --watch lib/style.styl --out static/css"
   }
 }

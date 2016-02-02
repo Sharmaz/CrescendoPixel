@@ -26,30 +26,40 @@ web.use('/portafolio', express.static('public/portafolio.html'))
 web.use('/contacto', express.static('public/contacto.html'))
 
 web.use( parser.urlencoded({ extended: true }))
-web.post('/enviar', function(req, res) {
-	var auth = {
-  auth: {
-    api_key: 'key-4cec4805d46b7c935457f2c405b43f5f',
-    domain: 'crescendopixel.com'
-  }
-}
-	var nombre = req.body.nombre
-	var mail = req.body.mail
-	var mensaje = req.body.mensaje
-	var nodemailerMailgun = nodemailer.createTransport(mg(auth));
-	nodemailerMailgun.sendMail({
-	  from: mail,
-	  to: 'irae45@gmail.com', // An array if you have multiple recipients.
-	  subject: 'Crescendo Formulario',
-	  text: 'Hey, ' + nombre + ' Tiene un mensaje: ' + mensaje
-	}, function (err, info) {
-	  if (err) {
-	    console.log('Error: ' + err);
-	  }
-	  else {
-	    console.log('Response: ' + info);
-	  }
-	});
 
-	res.send("Nombre " + nombre + " " + mail + " " + mensaje)
-})
+web.post('/enviar', function(req, res){
+		console.log(req.headers.referer)
+		res.end()
+	})
+
+	//web.post('/contacto', function(req, res) {
+	// 	var auth = {
+	//   auth: {
+	//     api_key: 'key-4cec4805d46b7c935457f2c405b43f5f',
+	//     domain: 'crescendopixel.com'
+	//   }
+	// }
+	// 	var nombre = req.body.nombre
+	// 	var mail = req.body.mail
+	// 	var mensaje = req.body.mensaje
+	// 	var nodemailerMailgun = nodemailer.createTransport(mg(auth));
+	// 	nodemailerMailgun.sendMail({
+	// 	  from: mail,
+	// 	  to: 'irae45@gmail.com', // An array if you have multiple recipients.
+	// 	  subject: 'Crescendo Formulario',
+	// 	  text: 'Hey, ' + nombre + ' Tiene un mensaje: ' + mensaje
+	// 	}, function (err, info) {
+	// 	  if (err) {
+	// 	  	res.status(500).json({
+	// 	  		error: 'No fue posible enviar en estos momentos :('
+	// 	  	})
+	// 	    console.log('Error: ' + err);
+	// 	  }
+	// 	  else {
+	// 	  	res.status(200).json({
+	// 	  		message: 'Listo, mensaje enviado :)'
+	// 	  	})
+	// 	    console.log('Response: ' + info);
+	// 	  }
+	// 	});
+//})
